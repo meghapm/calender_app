@@ -1,5 +1,5 @@
-#source 'file:///home/megha/gem_repo'
-  source 'http://rubygems.org'
+source 'file:///home/megha/gem_repo'
+ # source 'http://rubygems.org'
 gem 'rails', '3.2.16'
 
 # Bundle edge Rails instead:

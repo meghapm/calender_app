@@ -16,11 +16,12 @@
 /* Outer most container */
 .ec-calendar {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #2eac6a;
 }
 
 /* Month name header & links */
@@ -28,11 +29,15 @@
   padding: 5px 0;
   width: 100%;
   table-layout: fixed;
+  
+  
 }
 
 .ec-month-name {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
+font-family: verdana;
+
 }
 
 .ec-month-nav {
@@ -42,8 +47,9 @@
 /* Containers */
 .ec-body {
   position: relative;
-  border-right: 1px solid #303030;
+  border-right: 1px solid #2eac6a;
   white-space: nowrap;
+  
 }
 
 /* Day names */
@@ -54,12 +60,12 @@
   width: 100%;
   table-layout: fixed;
   padding: 2px 0;
-  background: #303030;
+  background: #088a29;
   color: white;
 }
 
 .ec-day-name {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* Rows container and Row */
@@ -70,7 +76,7 @@
   width: 100%;
   background: white;
   overflow: hidden;
-  border-right: 1px solid #d5d5d5;
+  border-right: 1px solid #2eac6a;
 }
 
 .ec-row {
@@ -88,10 +94,12 @@
   height: 100%;
   width: 100%;
   table-layout: fixed;
+  
 }
 
 .ec-day-bg {
-  border-left: 1px solid #d5d5d5;
+  border-left: 1px solid #a9f5bc;
+
 }
 
 .ec-today-bg {
@@ -106,23 +114,22 @@
 
 /* Day header */
 .ec-day-header {
-  color: #444;
+  color: #04b404;
   text-align: right;
   padding: 0 5px;
   line-height: 16px;
   border-top: 1px solid #d5d5d5;
   border-left: 1px solid #d5d5d5;
-  border-bottom: 1px dotted #bbbbbb;
-  background-color: #ecede2;
+  background-color: #cef6d8;
   overflow: hidden;
 }
 
 a.ec-day-link {
-  color: #444;
+  color: red;
 }
 
 .ec-today-header {
-  background-color: #d7d7ba;
+  background-color: #ffffdd;
 }
 
 .ec-weekend-day-header {
@@ -145,6 +152,8 @@ a.ec-day-link {
   vertical-align: top;
   padding-right: 1px;
   padding-left: 2px;
+
+  
 }
 
 .ec-event-cell a {
@@ -152,6 +161,8 @@ a.ec-day-link {
   display: block;
   width: 100%;
   height: 100%;
+  background-color: #fe2e2e;
+
 }
 
 .ec-no-event-cell {
@@ -159,9 +170,9 @@ a.ec-day-link {
 }
 
 .ec-event {
-  color: white;
-  padding-right: 1px;
-  padding-left: 11px;
+  color: red;
+  padding-right: 0px;
+  padding-left: 0px;
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -176,6 +187,9 @@ a.ec-day-link {
 
 .ec-event-bg a {
   color: white;
+  font-style: italic;
+  
+
 }
 
 /* used to distinguish non-all_day events */
